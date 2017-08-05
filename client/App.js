@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Header from './Header';
+import Paper from 'material-ui/Paper';
+import FloatingActionButton from 'material-ui/FloatingActionButton';
+import ContentAdd from 'material-ui/svg-icons/content/add';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const appStyle = {
@@ -14,14 +18,16 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <div className="App">
-          <div className="col-md-6 col-md-offset-3">
-            <div className="App-header">
-              <h2 style={appStyle}>Goalie</h2>
-            </div>
-            <p style={textStyle}>
+            <Header />
+            {/*<!-- Side Panel -->
+            <!-- Content -->*/}
+            <Paper style={textStyle}>
               Testing fonts!
-            </p>
-          </div>
+            </Paper>
+            {/*<!-- Footer -->*/}
+            <FloatingActionButton>
+              <ContentAdd />
+            </FloatingActionButton>
         </div>
       </MuiThemeProvider>
     );
