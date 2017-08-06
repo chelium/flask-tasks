@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '@material/toolbar/dist/mdc.toolbar.min.css';
-
-const barStyle = {
-  flex: '0 0 auto'
-};
 
 class Header extends Component {
   render() {
