@@ -5,6 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "@material/drawer": "^0.5.3",
+    "@material/tabs": "^0.2.4",
+    "@material/toolbar": "^0.4.3",
+    "material-design-icons": "^3.0.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },

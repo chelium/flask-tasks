@@ -8,8 +8,20 @@ const barStyle = {
 class Header extends Component {
   render() {
     return (
-      <AppBar style={barStyle}
-              title="Goalie" />
+      <header className="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--waterfall">
+        <div className="mdc-toolbar__row">
+          <section className="mdc-toolbar__section mdc-toolbar__section--align-start">
+            <a href="#" className="material-icons mdc-toolbar__icon--menu">menu</a>
+            <span className="mdc-toolbar__title">Goalie</span>
+          </section>
+          <section className="mdc-toolbal__section mdc-toolbar__section--align-end">
+            <nav className="mdc-tab-bar">
+              <a className="mdc-tab" href="#">Signup</a>
+              <a className="mdc-tab" href="#">Login</a>
+            </nav>
+          </section>
+        </div>
+      </header>
     );
   }
 }

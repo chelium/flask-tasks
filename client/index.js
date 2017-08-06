@@ -6,4 +6,3 @@ import App from './App.js';
 injectTapEventPlugin();
 
 ReactDOM.render(<App/>, document.getElementById('root'));
-
