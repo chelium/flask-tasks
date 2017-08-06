@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AppBar from 'material-ui/AppBar';
+import '@material/toolbar/dist/mdc.toolbar.min.css';
 
 const barStyle = {
   flex: '0 0 auto'

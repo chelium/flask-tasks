@@ -8,8 +8,9 @@ def create_app():
 
 app = create_app()
 
-@app.route("/")
-def index():
+@app.route("/", defaults={'path': ''})
+@app.route("/<path:path>")
+def index(path):
     return render_template("index.html")
 
 if __name__ == "__main__":
