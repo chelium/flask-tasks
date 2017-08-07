@@ -9,12 +9,16 @@ class Header extends Component {
         <div className="mdc-toolbar__row">
           <section className="mdc-toolbar__section mdc-toolbar__section--align-start">
             <a href="#" className="material-icons mdc-toolbar__icon--menu">menu</a>
-            <span className="mdc-toolbar__title">Goalie</span>
+            <Link className="mdc-toolbar__title-link" to="/">
+              <h1 className="mdc-toobar__title mdc-toolbar__title--full">
+                Goalie
+              </h1>
+            </Link>
           </section>
           <section className="mdc-toolbal__section mdc-toolbar__section--align-end">
             <nav className="mdc-tab-bar">
-              <a className="mdc-tab" href="#">Signup</a>
-              <a className="mdc-tab" href="#">Login</a>
+              <Link className="mdc-tab" to="/signup">Signup</Link>
+              <Link className="mdc-tab" to="/login">Login</Link>
             </nav>
           </section>
         </div>
