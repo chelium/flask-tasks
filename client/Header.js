@@ -15,7 +15,7 @@ class Header extends Component {
               </h1>
             </Link>
           </section>
-          <section className="mdc-toolbal__section mdc-toolbar__section--align-end">
+          <section className="mdc-toolbar__section mdc-toolbar__section--align-end">
             <nav className="mdc-tab-bar">
               <Link className="mdc-tab" to="/signup">Signup</Link>
               <Link className="mdc-tab" to="/login">Login</Link>

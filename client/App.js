@@ -11,6 +11,7 @@ import Login from './Login';
 import Signup from './Signup';
 import '@material/layout-grid/dist/mdc.layout-grid.min.css';
 import '@material/tabs/dist/mdc.tabs.min.css';
+import './style.scss';
 
 const appStyle = {
   fontFamily: 'Roboto'
