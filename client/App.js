@@ -9,6 +9,7 @@ import Content from './Content';
 import Footer from './Footer';
 import Login from './Login';
 import Signup from './Signup';
+import NotFound from './NotFound';
 import '@material/layout-grid/dist/mdc.layout-grid.min.css';
 import '@material/tabs/dist/mdc.tabs.min.css';
 import './style.scss';
@@ -26,6 +27,7 @@ class App extends Component {
           <Route exact path="/" component={Content}/>
           <Route path="/login" component={Login}/>
           <Route path="/signup" component={Signup}/>
+          <Route path="*" component={NotFound} />
           <Footer />
           <SidePanel />
         </div>

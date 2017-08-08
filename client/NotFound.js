@@ -4,7 +4,7 @@ const textStyle = {
   fontFamily: 'Raleway'
 };
 
-class Signup extends Component {
+class NotFound extends Component {
   render () {
     return (
         <main className="mdc-toolbar-fixed-adjust">
@@ -13,9 +13,8 @@ class Signup extends Component {
               <div className="mdc-layout-grid__cell--span-2">
               </div>
               <div className="mdc-layout-grid__cell--span-8">
-                <h1>Signup</h1>
-                <p>Name</p>
-                <p>Password</p>
+                <h1>404 Error</h1>
+                <p>The page you are looking for does not exist.</p>
               </div>
               <div className="mdc-layout-grid__cell--span-2">
               </div>
@@ -26,4 +25,4 @@ class Signup extends Component {
   }
 }
 
-module.exports = Signup;
+module.exports = NotFound;
