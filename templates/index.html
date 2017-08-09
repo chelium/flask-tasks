@@ -7,10 +7,6 @@
       href="{{ url_for('static', filename='fonts.css') }}">
     <link rel="stylesheet"
       href="{{ url_for('static', filename='assets/material-icons.css') }}">
-    <script type="text/javascript"
-      src="{{ url_for('static', filename='assets/mdc.toolbar.min.js') }}"></script>
-    <script type="text/javascript"
-      src="{{ url_for('static', filename='assets/mdc.tabs.min.js') }}"></script>
   </head>
   <body style="margin: 0;">
     <noscript>
@@ -20,8 +16,4 @@
     <script type="text/javascript"
       src="{{ url_for('static', filename='build.js') }}"></script>
   </body>
-  <script>
-    var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.mdc-toolbar'));
-    toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
-  </script>
 </html>

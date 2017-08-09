@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '@material/toolbar/dist/mdc.toolbar.min.css';
+import '@material/toolbar/dist/mdc.toolbar.min.js';
+import { MDCToolbar } from '@material/toolbar/dist/mdc.toolbar.min.js';
 
 class Header extends Component {
   render() {
@@ -24,6 +26,10 @@ class Header extends Component {
         </div>
       </header>
     );
+  }
+  componentDidMount() {
+    var toolbar = MDCToolbar.attachTo(document.querySelector('.mdc-toolbar'));
+    toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
   }
 }
 
