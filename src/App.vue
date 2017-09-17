@@ -1,19 +1,40 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
-    <hello></hello>
-  </div>
+  <v-app dark toolbar>
+    <v-navigation-drawer
+      absolute dark
+      persistent clipped overflow
+      v-model="drawer">
+      <v-list class="pt-0" dense>
+        Placeholder Text
+      </v-list>
+    </v-navigation-drawer>
+    <v-toolbar>
+      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-title>Goalie</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn flat href="login">Login</v-btn>
+        <v-btn flat href="signup">Sign Up</v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
+    <main>
+      <v-container fluid>
+        <router-view></router-view>
+      </v-container>
+    </main>
+    <v-footer>
+    </v-footer>
+  </v-app>
 </template>
 
 <script>
-import Hello from './components/Hello'
-export default {
-  name: 'app',
-  components: {
-    Hello
+  export default {
+    data () {
+      return {
+        drawer: true
+      }
+    }
   }
-}
 </script>
 
 <style>
@@ -23,6 +44,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
